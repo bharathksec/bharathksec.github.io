@@ -1,5 +1,5 @@
 ---
-title: Yet Another Sample Page
+title: My First Bounty A 100$ Stored Xss 
 published: true
 ---
 
