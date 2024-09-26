@@ -15,14 +15,15 @@ There should be whitespace between paragraphs. We recommend including a README, 
 # [](#header-1)What is Stored Xss
 
 You can learn about Stored Xss here
-[Link to another page](https://portswigger.net/web-security/cross-site-scripting/stored).
+[portswigger](https://portswigger.net/web-security/cross-site-scripting/stored).
 
 
-## [](#header-2)Header 2
+## [](#header-1)How did i find this
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+The target was public bug bounty program hosted in hackerone.It had so many funtion in main appliaction.I was testing each one of them when ever i see a input field i copy paste a xss payload in it.Nothing worked after some time of testing i found a chat box which enable you to chat with others
+
+Started to test for xss.Then found that we can use markdown in chat like bold `**bold**`,italic `__italic__`,Codeblock ````codeblock````,Blockquote `>>Blockquote<<`.normally if we send a payload in chat it encode the payload to HTML entity.So tryed to inject a xss payload with the markdown like 
+```**bold** <img src=x onerror=alert()>```
 
 ### [](#header-3)Header 3
 
